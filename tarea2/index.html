@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cine.css">
+    <title>Kino de Arte</title>
+</head>
+<body>
+    <header>
+        <h1>KINO de Arte</h1>
+        <h2>DONDE PUEDES VIVIR TU PELICULA FAVORITA</h2>
+    </header>
+    
+    <main>
+        <section id="movie-list">
+            <!-- lista de peliculas -->
+        </section>
+
+        <section id="ticket-form">
+            <h2>Reserve sus tiquetes</h2>
+            <form id="booking-form">
+                <label for="movie-select">Seleccione una pelicula:</label>
+                <select id="movie-select" required>
+                    <!-- Movie options will be dynamically added here -->
+                </select>
+
+                <label for="quantity">Numero de tiquetes:</label>
+                <input type="number" id="quantity" min="1" required>
+
+                <button type="button" onclick="bookTickets()">Reserve ya</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cinema G.G</p>
+    </footer>
+
+    <script src="cine.js"></script>
+</body>
+</html>
